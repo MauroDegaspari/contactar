@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.maurodegaspari.contactar.model.UsuarioModel;
 
 @Repository
-public interface UsuarioRepository extends JpaRepository<UsuarioModel, Integer>{
+public interface UsuarioRepository extends JpaRepository<UsuarioModel, Long>{
 
 }

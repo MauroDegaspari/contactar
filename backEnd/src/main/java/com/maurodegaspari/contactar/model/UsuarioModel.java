@@ -13,7 +13,7 @@ public class UsuarioModel {
 	@Id
 	@Column(name = "ID_USUARIO")
 	@GeneratedValue()
-	private Integer id;
+	private Long id;
 	
 	@Column(name = "NOMEUSUARIO")
 	private String nome_usuario;
@@ -27,11 +27,11 @@ public class UsuarioModel {
 		super();
 	}
 
-	public int getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 
