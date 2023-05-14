@@ -1,0 +1,21 @@
+[1mdiff --git a/backEnd/src/main/java/com/maurodegaspari/contactar/model/UsuarioModel.java b/backEnd/src/main/java/com/maurodegaspari/contactar/model/UsuarioModel.java[m
+[1mindex 8541ea0..0eebbb0 100644[m
+[1m--- a/backEnd/src/main/java/com/maurodegaspari/contactar/model/UsuarioModel.java[m
+[1m+++ b/backEnd/src/main/java/com/maurodegaspari/contactar/model/UsuarioModel.java[m
+[36m@@ -3,6 +3,7 @@[m [mpackage com.maurodegaspari.contactar.model;[m
+ import javax.persistence.Column;[m
+ import javax.persistence.Entity;[m
+ import javax.persistence.GeneratedValue;[m
+[32m+[m[32mimport javax.persistence.GenerationType;[m
+ import javax.persistence.Id;[m
+ import javax.persistence.Table;[m
+ [m
+[36m@@ -12,7 +13,7 @@[m [mpublic class UsuarioModel {[m
+ 	[m
+ 	@Id[m
+ 	@Column(name = "ID_USUARIO")[m
+[31m-	@GeneratedValue()[m
+[32m+[m	[32m@GeneratedValue(strategy = GenerationType.IDENTITY)[m
+ 	private Long id;[m
+ 	[m
+ 	@Column(name = "NOMEUSUARIO")[m

@@ -16,7 +16,7 @@ public class ContatoModel {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id_contato")
-	private Long id;
+	private int id;
 	
 	@Column(name="nome_contato")
 	private String nomeContato;
@@ -31,7 +31,7 @@ public class ContatoModel {
 	private String anotacao;
 	
 	@ManyToOne
-	@JoinColumn(name = "id")
+	@JoinColumn(name = "id_usuario")
 	private UsuarioModel usuario;
 
 	public ContatoModel() {
@@ -39,11 +39,11 @@ public class ContatoModel {
 		
 	}
 
-	public Long getId() {
+	public int getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
