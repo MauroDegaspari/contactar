@@ -30,29 +30,29 @@ public class UsuarioController {
 	
 	@PostMapping
 	@ResponseStatus(HttpStatus.CREATED)
-	public UsuarioModel salvarUser(@RequestBody UsuarioModel user) {
+	public UsuarioModel salvarUsuario(@RequestBody UsuarioModel user) {
 		return repo.save(user);
 	}
 	
 	@GetMapping("{id}")
-	public UsuarioModel findClienteId(@PathVariable Long id) {
+	public UsuarioModel findUsuarioId(@PathVariable Long id) {
 		return repo
 				.findById(id)
 				.orElseThrow( ()-> new ResponseStatusException(HttpStatus.NOT_FOUND));
 	}
 	
 	@GetMapping("/todos")
-	public List<UsuarioModel> todosClientesFind(Pageable pageable){
+	public List<UsuarioModel> todosUsuarioFind(Pageable pageable){
 		return repo.findAll();
 	}
 	
 	@DeleteMapping("{id}")
 	@ResponseStatus(HttpStatus.NO_CONTENT)
-	public void excluirCLiente(@PathVariable Long id) {
+	public void excluirUsuario(@PathVariable Long id) {
 		repo
 		.findById(id)
-		.map( cliente ->{
-			repo.delete(cliente);
+		.map( usuario ->{
+			repo.delete(usuario);
 			return Void.TYPE;
 		})
 		.orElseThrow( ()-> new ResponseStatusException(HttpStatus.NOT_FOUND));
