@@ -5,16 +5,4 @@ body {
 
     background: #E8E4E4;
 }
-footer {
-    
-    background-color: #7895FC;
-    padding: 20px;
-    
-    font-size: 14px;
-  }
-  
-  @media (max-width: 768px) {
-    footer {
-      font-size: 12px;
-    }
-  }
+

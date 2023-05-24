@@ -1,0 +1,39 @@
+
+    .card {
+    
+        position: absolute;
+        width: 840px;
+        height: 457px;
+        left: 296px;
+        top: 233px;
+        
+        background: #FEF8F8;
+        box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 16px;
+    }
+    .card-container {
+        position: absolute;
+        width: 263px;
+        height: 457px;
+        left: 296px;
+        top: 233px;
+        
+        background: #7895FC;
+        border-radius: 16px 0px 0px 16px;
+    }
+  p {
+    
+    position: absolute;
+width: 209px;
+height: 63px;
+left: 323px;
+top: 414px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+
+color: #FFFFFF;
+    }
