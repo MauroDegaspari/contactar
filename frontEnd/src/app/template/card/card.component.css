@@ -1,39 +1,125 @@
 
-    .card {
-    
-        position: absolute;
-        width: 840px;
-        height: 457px;
-        left: 296px;
-        top: 233px;
-        
-        background: #FEF8F8;
-        box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.25);
-        border-radius: 16px;
-    }
-    .card-container {
-        position: absolute;
-        width: 263px;
-        height: 457px;
-        left: 296px;
-        top: 233px;
-        
-        background: #7895FC;
-        border-radius: 16px 0px 0px 16px;
-    }
-  p {
-    
+.card {
     position: absolute;
-width: 209px;
-height: 63px;
-left: 323px;
-top: 414px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 36px;
-
-color: #FFFFFF;
+    width: 840px;
+    height: 457px;
+    left: 296px;
+    top: 233px;
+    
+    background: #FEF8F8;
+    box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
     }
+.card-container {
+    position: fixed;
+    width: 263px;
+    height: 457px;
+    left: 296px;
+    top: 233px;
+        
+    background: #7895FC;
+    border-radius: 16px 0px 0px 16px;
+    }
+.titulo-card-container {
+    
+    position: fixed;
+    width: 209px;
+    height: 63px;
+    left: 323px;
+    top: 414px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 36px;
+
+    color: #FFFFFF;
+    }
+
+.ArrowEndback{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    
+    
+    width: 24px;
+    height: 24px;
+    left: 319px;
+    top: 625px;
+    }
+    .ArrowEndback p {
+        margin-left: 10px; /* Adiciona espaçamento à esqueda da palavra "Voltar" */
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        color: #FFFFFF;
+
+
+      }
+
+.form-email{
+    position: fixed;
+    width: 383px;
+    height: 43.52px;
+    left: 650px;
+    top: 434px;
+    
+    background: #E8E4E4;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+   
+    display: flex;
+
+    color: #FFFFFF;
+}
+
+.form-senha{
+    position: fixed;
+    width: 383px;
+    height: 43.52px;
+    left: 650px;
+    top: 488.98px;
+
+    background: #E8E4E4;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+   
+    display: flex;
+
+    color: #FFFFFF;
+}
+
+.form-btn{
+    position: fixed;
+    width: 96px;
+    height: 34px;
+    left: 662px;
+    top: 553px;
+    
+    background: #7895FC;
+    border: 3px solid #7895FC;
+    border-radius: 30px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+      
+    
